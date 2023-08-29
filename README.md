@@ -1,5 +1,13 @@
 # Deposit ETH for Staking
 
+
+This smart contract has been developed to simplify the process of depositing Ether into The Deposit Contract. It differs from the traditional method of loading data for each validator and individually signing transactions by allowing users to call a function (callDepositFunction) to deposit funds to the Deposit contract by providing the necessary parameters as: arrays of  data related to deposits: `pubkeys`, `withdrawal_credentials`, `signatures`, and `deposit_data_roots`. 
+
+It loops through the provided data arrays and calls the `_depositContract.deposit` function for each element. Each deposit call includes a transfer of configurable amount of Ether to the Deposit contract.
+
+Furthermore, aside from the presented smart contract, additional valuable functionalities have been incorporated. These include the ability to extract essential data from a JSON file and partition it into batches of adjustable sizes. This segmentation ensures that when transactions are sent to the smart contract, they do not surpass the gas limit.
+
+
 ## Prerequisites
 
 
