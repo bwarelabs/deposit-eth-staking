@@ -1,0 +1,19 @@
+# node packages
+node_modules/
+
+# node dependencies `lock` files
+yarn.lock
+
+# hardhat generated
+artifacts/
+cache/
+build/
+
+.idea/
+
+coverage.json
+coverage/
+
+config
+
+.DS_Store
