@@ -4,7 +4,7 @@
 
 
 * Visual Studio Code
-* Docker
+* Docker Desktop
 * Install Docker extension from Visual Studio Extensions
 
 
